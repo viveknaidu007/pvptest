@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-const {SaleModel}= require("../model/saleModel")
+import { SaleModel } from "../model/SaleModel";
 
 export const getsales =async (req:Request,res:Response):Promise<void> =>{
     try{

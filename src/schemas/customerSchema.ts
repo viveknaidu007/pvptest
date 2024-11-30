@@ -1,6 +1,6 @@
-const {Schema}= require("mongoose");
+import { Schema } from "mongoose";
 
-const CustomerSchema = new Schema({
+export const CustomerSchema = new Schema({
     name:String,
     mobile:Number
 });

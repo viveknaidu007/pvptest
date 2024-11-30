@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-const {CustomerModel}= require("../model/CustomerModel")
+import { CustomerModel } from "../model/CustomerModel";
 
 
 

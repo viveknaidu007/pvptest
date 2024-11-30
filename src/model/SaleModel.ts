@@ -1,7 +1,7 @@
-const {model} = require("mongoose");
+import { model } from "mongoose";
 
-const {SaleSchema} = require("../schemas/saleSchema");
+import { SaleSchema } from "../schemas/saleSchema";
 
-const SaleModel = new model("sale",SaleSchema);
+export const SaleModel =  model("sale",SaleSchema);
 
 module.exports={SaleModel};

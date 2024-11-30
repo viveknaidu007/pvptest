@@ -1,7 +1,7 @@
 import { Request,Response } from "express";
-const {SaleModel}= require("../model/saleModel");
-const {PurchaseModel} = require("../model/PurchaseModel");
-const {CustomerModel}= require("../model/CustomerModel");
+import { SaleModel } from "../model/SaleModel";
+import { PurchaseModel } from "../model/PurchaseModel";
+import { CustomerModel } from "../model/CustomerModel";
 
 export const getDashBoard = async (req:Request,res:Response):Promise<void>=>{
 try {

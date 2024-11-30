@@ -1,4 +1,4 @@
-const {Schema} = require("mongoose");
+import { Schema } from "mongoose";
 export const SaleSchema=new Schema({
     customer:String,
     product:String,

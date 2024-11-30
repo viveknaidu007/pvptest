@@ -1,7 +1,7 @@
-const {model} = require("mongoose");
+import { model } from "mongoose";
 
-const {CustomerSchema} = require("../schemas/customerSchema");
+import { CustomerSchema } from "../schemas/customerSchema";
 
-const CustomerModel = new model("customer",CustomerSchema);
+export const CustomerModel =  model("customer",CustomerSchema);
 
 module.exports={CustomerModel};

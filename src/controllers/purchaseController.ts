@@ -1,5 +1,5 @@
 import { Request,Response} from "express";
-const {PurchaseModel} = require("../model/PurchaseModel")
+import { PurchaseModel } from "../model/PurchaseModel";
 
 export const getPurchases = async (req:Request,res:Response):Promise<void> =>{
     try {
