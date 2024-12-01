@@ -14,7 +14,7 @@ export const postpurchase = async (req:Request,res:Response):Promise<void>=>{
     try {
 
         let createPurchase = new PurchaseModel({
-            name:req.body.name,
+            customer:req.body.customer,
             product:req.body.product,
             quantity:req.body.quantity,
             rate:req.body.rate,
