@@ -1,9 +1,9 @@
 import { Request,Response} from "express";
 import { PurchaseModel } from "../model/PurchaseModel";
 
-export const getPurchases = async (req:Request,res:Response):Promise<void> =>{
+export const getpurchases = async (req:Request,res:Response):Promise<void> =>{
     try {
-        let findAllPurchases = PurchaseModel.find({});
+        let findAllPurchases = await PurchaseModel.find({});
         res.json(findAllPurchases)
     } catch (error) {
         res.status(500).json({message:"Error when creating sale!!"})
